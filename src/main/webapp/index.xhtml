@@ -18,10 +18,66 @@
         </p:panel>
 
         <p:panel style="border: none; text-align: center;" >
-            <p:graphicImage value="resources/images/format.png" />    
+            <p:graphicImage value="resources/images/apsu-format.png" />    
+        </p:panel>
+
+        <p:panel  styleClass="para">
+            Current naming style used at APS machine, which could be an example to standardize the naming system, especially for the APS-U project.
+        </p:panel>
+
+        <p:panel style="border: none; text-align: center;" >
+            <p:graphicImage value="resources/images/aps-format.png" />    
         </p:panel>
 
         <h2 class="heading">Name Components</h2>
+        <p:panelGrid style="text-align: left">  
+            <f:facet name="header">  
+                <p:row>  
+                    <p:column>Naming Part</p:column>  
+                    <p:column>Description</p:column>  
+                    <p:column>Example</p:column>  
+                    <p:column>Notes</p:column>  
+                </p:row>  
+            </f:facet> 
+            <p:row>  
+                <p:column>Psy</p:column>  
+                <p:column>Primary system name</p:column>  
+                <p:column>S</p:column>  
+                <p:column>Storage Ring</p:column>  
+            </p:row> 
+            <p:row>  
+                <p:column>NN</p:column>  
+                <p:column>Instance of primary system</p:column>  
+                <p:column>05</p:column>  
+                <p:column>Sector 5</p:column>  
+            </p:row> 
+            <p:row>  
+                <p:column>DDDD</p:column>  
+                <p:column>Component name</p:column>  
+                <p:column>Q</p:column>  
+                <p:column>Quadrupole</p:column>  
+            </p:row> 
+            <p:row>  
+                <p:column>XX</p:column>  
+                <p:column>Sub device name</p:column>  
+                <p:column></p:column>  
+                <p:column></p:column>  
+            </p:row> 
+            <p:row>  
+                <p:column>nn</p:column>  
+                <p:column>Instance of component</p:column>  
+                <p:column>4</p:column>  
+                <p:column>The 4th Quads in the sector</p:column>  
+            </p:row> 
+            <p:row>  
+                <p:column>(TBD)</p:column>  
+                <p:column>Place holder for the signal for signal name</p:column>  
+                <p:column></p:column>  
+                <p:column></p:column>  
+            </p:row> 
+        </p:panelGrid>
+
+        <h2 class="heading">System Examples</h2>
         <p:panelGrid style="text-align: left">  
             <f:facet name="header">  
                 <p:row>  
@@ -32,74 +88,110 @@
                 </p:row>  
             </f:facet>  
             <p:row>  
-                <p:column>SSSS</p:column>  
-                <p:column>System</p:column>  
-                <p:column>Names in <h:outputLink value="names.xhtml?category=system">Table 3</h:outputLink>. System name is required. Up to 4 characters.</p:column>  
-                <p:column>Division Director</p:column>  
+                <p:column>S</p:column>  
+                <p:column>Storage Ring</p:column>  
+                <p:column></p:column>  
+                <p:column></p:column>  
             </p:row> 
             <p:row>  
-                <p:column>BBBB</p:column>  
-                <p:column>Subsystem</p:column>  
-                <p:column>Names in <h:outputLink value="names.xhtml?category=subsystem">Table 4</h:outputLink>. 
-                    May be omitted if subsystem is obvious from system name or device name. 
-                    Up to 8 characters, but 4 is recommended.</p:column>  
-                <p:column>Division Director</p:column>  
-            </p:row>
-
+                <p:column>B</p:column>  
+                <p:column>Booster Ring</p:column>  
+                <p:column></p:column>  
+                <p:column></p:column>  
+            </p:row> 
             <p:row>  
-                <p:column>DDDD</p:column>  
-                <p:column>Device Type</p:column>  
-                <p:column>Names in <h:outputLink value="names.xhtml?category=subsystem">Table 5</h:outputLink> 
-                    or IEEE 803 "Recommended Practice for Unique Identification in Power Plants and Related Facilities". 
-                    Device type is required. Up to 4 characters. Devices in grey italics are reserved.</p:column>  
-                <p:column>Control&nbsp;Account&nbsp;Manager</p:column>  
-            </p:row>
+                <p:column>SY</p:column>  
+                <p:column>Storage RF</p:column>  
+                <p:column>Not to be used for new PVs</p:column>  
+                <p:column></p:column>  
+            </p:row> 
             <p:row>  
-                <p:column>Q</p:column>  
-                <p:column>Qualifier</p:column>  
-                <p:column>Either "D", "N" or “C” depending on the meaning of the following device instance 
-                    number (for beam line components: "D" for distance along beamline; for others: "N" for 
-                    sequential number, “C” is for Cryogenic Systems). For each of the FRIB driver linac 
-                    and ReA3, the RFQ input is set to have D=1000 (i.e. 100 m). All beam line 
-                    components upstream from the RFQ input have D &lt; 1000, all downstream ones have 
-                    D > 1000. The fragment separator has D=1000 at the production target. For Dual 
-                    systems at the same distance, “D+1” can be used added to the original distance.
-                </p:column>  
-                <p:column>Control Account Manager</p:column>  
+                <p:column>P</p:column>  
+                <p:column>PAR</p:column>  
+                <p:column></p:column>  
+                <p:column></p:column>  
+            </p:row> 
+            <p:row>  
+                <p:column>L</p:column>  
+                <p:column>Linac</p:column>  
+                <p:column></p:column>  
+                <p:column></p:column>  
             </p:row>
             <p:row>  
-                <p:column>IIII</p:column>  
-                <p:column>Device Instance</p:column>  
-                <p:column>Number as defined under Q (see above).  
-                    If Q="N", the device instance should also be a number.  
-                    Alphabetic characters subject to Controls Dept. 
-                    CAM approval. 4 characters mandatory. If Q=”C” the device instance 
-                    should be a number 5 characters long.  </p:column>  
-                <p:column>Control Account Manager</p:column>  
+                <p:column>Mt</p:column>  
+                <p:column>Master Timing</p:column>  
+                <p:column></p:column>  
+                <p:column></p:column>  
             </p:row>
             <p:row>  
-                <p:column>TTTT</p:column>  
-                <p:column>Signal  Type</p:column>  
-                <p:column>Signal types are defined in <h:outputLink value="names.xhtml?category=signal-type">Table 6</h:outputLink>. 
-                    Up to 4 characters.</p:column>  
-                <p:column>Lead Engineer</p:column>  
+                <p:column>It</p:column>  
+                <p:column>Injector Timing</p:column>  
+                <p:column></p:column>  
+                <p:column></p:column>  
             </p:row>
             <p:row>  
-                <p:column>XXXX</p:column>  
-                <p:column>Signal Domain </p:column>  
-                <p:column>Codes shown in <h:outputLink value="names.xhtml?category=signal-domain">Table 7</h:outputLink>. 
-                    Up to 4 characters.</p:column>  
-                <p:column>Lead Engineer</p:column>  
+                <p:column>SRF</p:column>  
+                <p:column>Storage Ring RF</p:column>  
+                <p:column></p:column>  
+                <p:column></p:column>  
             </p:row>
             <p:row>  
-                <p:column>CCCC</p:column>  
-                <p:column>Additional Signal Description  </p:column>  
-                <p:column>Use is optional. Up to 4 characters</p:column>  
-                <p:column>Lead Engineer</p:column>  
+                <p:column>SRFB</p:column>  
+                <p:column>Storage Ring Feedback System</p:column>  
+                <p:column></p:column>  
+                <p:column></p:column>  
+            </p:row>
+            <p:row>  
+                <p:column>BTS</p:column>  
+                <p:column>Booster to Storage Ring</p:column>  
+                <p:column></p:column>  
+                <p:column></p:column>  
+            </p:row>
+            <p:row>  
+                <p:column>H2O</p:column>  
+                <p:column>Water System</p:column>  
+                <p:column></p:column>  
+                <p:column></p:column>  
+            </p:row>
+            <p:row>  
+                <p:column>IOC</p:column>  
+                <p:column>IOC Status</p:column>  
+                <p:column></p:column>  
+                <p:column></p:column>  
+            </p:row>
+            <p:row>  
+                <p:column>ACIS</p:column>  
+                <p:column>Access Control Interlock</p:column>  
+                <p:column></p:column>  
+                <p:column></p:column>  
+            </p:row>
+            <p:row>  
+                <p:column>FE</p:column>  
+                <p:column>Front End (XFD)</p:column>  
+                <p:column></p:column>  
+                <p:column></p:column>  
+            </p:row>
+            <p:row>  
+                <p:column>ID</p:column>  
+                <p:column>Insertion Device (XFD)</p:column>  
+                <p:column></p:column>  
+                <p:column></p:column>  
+            </p:row>
+            <p:row>  
+                <p:column>EPS</p:column>  
+                <p:column>Equipment protection System (XFD)</p:column>  
+                <p:column></p:column>  
+                <p:column></p:column>  
+            </p:row>
+            <p:row>  
+                <p:column>PA</p:column>  
+                <p:column>Personnel Safety System (XFD)</p:column>  
+                <p:column></p:column>  
+                <p:column></p:column>  
             </p:row>
         </p:panelGrid> 
         
-        <h2 class="heading">Examples</h2>
+<!--        <h2 class="heading">Examples</h2>
      
         <p:panelGrid style="text-align: left">  
             <f:facet name="header">                  
@@ -334,7 +426,7 @@
                 <p:column>ACS_LIN:IOC_N4567:PROP_RD_IP</p:column>
                 <p:column></p:column>
             </p:row>
-        </p:panelGrid>
+        </p:panelGrid>-->
     </ui:define>
 
 </ui:composition>
