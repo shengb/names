@@ -17,10 +17,10 @@ package org.openepics.discs.names.ui;
 
 import org.openepics.discs.names.ent.NameEvent;
 import org.openepics.discs.names.ent.NameRelease;
-import com.lowagie.text.BadElementException;
-import com.lowagie.text.Document;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.PageSize;
+import com.itextpdf.text.BadElementException;
+import com.itextpdf.text.Document;
+import com.itextpdf.text.DocumentException;
+import com.itextpdf.text.PageSize;
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;
