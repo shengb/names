@@ -35,7 +35,7 @@ public class NameElementResource {
     public List<NameElement> getNameElements(@DefaultValue("%") @QueryParam("category") String categoty,
             @DefaultValue("false") @QueryParam("all") Boolean includeAll) {
         List<NameEvent> nameEvents;
-        List<NameElement> nameElements = new ArrayList();
+        List<NameElement> nameElements = new ArrayList <> ();
 
         nameEvents = namesEJB.findNames(categoty, includeAll);
 
