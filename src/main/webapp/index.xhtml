@@ -11,23 +11,51 @@
         
         <h2 class="heading">Introduction</h2>
         <p:panel  styleClass="para">
-            Format and syntax of the name components shall be as shown in the figure below. 
-            Only the device name is required on drawings, name tags, etc. where the drawing or device name clearly 
-            indicates the system and subsystem including the equipment. 
-            However, where the system and/or subsystem are not apparent, the full name must be shown.
+            Because the APS-U accelerators are moving into the fabrication/assembly/installation stage, 
+            it is important for consistent naming conventions to be used throughout the project. 
+            The intent of this application is to dictate the rules to be adhered to when naming devices in the storage ring. 
+            These rules are generic in nature, and shall be applied in principle to the other machines as well. 
+            It is essential that every component have a unique and, hopefully, easily recognizable name.
         </p:panel>
-
-        <p:panel style="border: none; text-align: center;" >
-            <p:graphicImage value="resources/images/apsu-format.png" />    
-        </p:panel>
-
         <p:panel  styleClass="para">
-            Current naming style used at APS machine, which could be an example to standardize the naming system, especially for the APS-U project.
+            Every ASD and XFD group, except for magnets, must interface with the control system. 
+            For this reason all device names were developed keeping in mind their actual function, 
+            such as controlling or monitoring some device in the ring. 
+            Even though magnets are not directly interfaced to the control system, their power supplies are; 
+            therefore, a magnet will have the same name as its associated power supply.
         </p:panel>
 
         <p:panel style="border: none; text-align: center;" >
-            <p:graphicImage value="resources/images/aps-format.png" />    
+            <p:graphicImage value="resources/images/apsu-format.png" style="width: 60%;"/>    
         </p:panel>
+
+        <h2 class="heading">Examples</h2>
+        <ol>
+            <li>
+                <p:panel  styleClass="para">
+                Naming examples of APS-U lattice structure with magnet.
+                </p:panel>
+                <p:panel style="border: none; text-align: center; " >
+                    <p:graphicImage value="resources/images/apsu2-format.png"  style="width: 90%;"/>    
+                </p:panel>
+            </li>
+            <li>
+                <p:panel  styleClass="para">
+                    Naming examples of APS-U lattice structure with vacuum and diagnostics.
+                </p:panel>
+                <p:panel style="border: none; text-align: center;" >
+                    <p:graphicImage value="resources/images/apsu3-format.png"  style="width: 100%;"/>   
+                </p:panel>
+            </li>
+            <li>
+                <p:panel  styleClass="para">
+                    Naming examples of APS-U racks.
+                </p:panel>
+                <p:panel style="border: none; text-align: center;" >
+                    <p:graphicImage value="resources/images/apsu4-format.png"  style="width: 35%;"/>   
+                </p:panel>
+            </li>
+        </ol>
 
         <h2 class="heading">Name Components</h2>
         <p:panelGrid style="text-align: left">  
@@ -45,11 +73,17 @@
                 <p:column>S</p:column>  
                 <p:column>Storage Ring</p:column>  
             </p:row> 
-            <p:row>  
+            <p:row> 
                 <p:column>NN</p:column>  
                 <p:column>Instance of primary system</p:column>  
                 <p:column>05</p:column>  
                 <p:column>Sector 5</p:column>  
+            </p:row> 
+            <p:row> 
+                <p:column>#</p:column>  
+                <p:column>Upstream, Downstream Half of Sector</p:column>  
+                <p:column>A, B</p:column>  
+                <p:column>Could be BM, or ID for front end</p:column>  
             </p:row> 
             <p:row>  
                 <p:column>DDDD</p:column>  
@@ -77,123 +111,670 @@
             </p:row> 
         </p:panelGrid>
 
-        <h2 class="heading">System Examples</h2>
-        <p:panelGrid style="text-align: left">  
-            <f:facet name="header">  
-                <p:row>  
-                    <p:column>Naming Part</p:column>  
-                    <p:column>Description</p:column>  
-                    <p:column>Requirements</p:column>  
-                    <p:column>Assigned By</p:column>  
-                </p:row>  
-            </f:facet>  
-            <p:row>  
-                <p:column>S</p:column>  
-                <p:column>Storage Ring</p:column>  
-                <p:column></p:column>  
-                <p:column></p:column>  
-            </p:row> 
-            <p:row>  
-                <p:column>B</p:column>  
-                <p:column>Booster Ring</p:column>  
-                <p:column></p:column>  
-                <p:column></p:column>  
-            </p:row> 
-            <p:row>  
-                <p:column>SY</p:column>  
-                <p:column>Storage RF</p:column>  
-                <p:column>Not to be used for new PVs</p:column>  
-                <p:column></p:column>  
-            </p:row> 
-            <p:row>  
-                <p:column>P</p:column>  
-                <p:column>PAR</p:column>  
-                <p:column></p:column>  
-                <p:column></p:column>  
-            </p:row> 
-            <p:row>  
-                <p:column>L</p:column>  
-                <p:column>Linac</p:column>  
-                <p:column></p:column>  
-                <p:column></p:column>  
-            </p:row>
-            <p:row>  
-                <p:column>Mt</p:column>  
-                <p:column>Master Timing</p:column>  
-                <p:column></p:column>  
-                <p:column></p:column>  
-            </p:row>
-            <p:row>  
-                <p:column>It</p:column>  
-                <p:column>Injector Timing</p:column>  
-                <p:column></p:column>  
-                <p:column></p:column>  
-            </p:row>
-            <p:row>  
-                <p:column>SRF</p:column>  
-                <p:column>Storage Ring RF</p:column>  
-                <p:column></p:column>  
-                <p:column></p:column>  
-            </p:row>
-            <p:row>  
-                <p:column>SRFB</p:column>  
-                <p:column>Storage Ring Feedback System</p:column>  
-                <p:column></p:column>  
-                <p:column></p:column>  
-            </p:row>
-            <p:row>  
-                <p:column>BTS</p:column>  
-                <p:column>Booster to Storage Ring</p:column>  
-                <p:column></p:column>  
-                <p:column></p:column>  
-            </p:row>
-            <p:row>  
-                <p:column>H2O</p:column>  
-                <p:column>Water System</p:column>  
-                <p:column></p:column>  
-                <p:column></p:column>  
-            </p:row>
-            <p:row>  
-                <p:column>IOC</p:column>  
-                <p:column>IOC Status</p:column>  
-                <p:column></p:column>  
-                <p:column></p:column>  
-            </p:row>
-            <p:row>  
-                <p:column>ACIS</p:column>  
-                <p:column>Access Control Interlock</p:column>  
-                <p:column></p:column>  
-                <p:column></p:column>  
-            </p:row>
-            <p:row>  
-                <p:column>FE</p:column>  
-                <p:column>Front End (XFD)</p:column>  
-                <p:column></p:column>  
-                <p:column></p:column>  
-            </p:row>
-            <p:row>  
-                <p:column>ID</p:column>  
-                <p:column>Insertion Device (XFD)</p:column>  
-                <p:column></p:column>  
-                <p:column></p:column>  
-            </p:row>
-            <p:row>  
-                <p:column>EPS</p:column>  
-                <p:column>Equipment protection System (XFD)</p:column>  
-                <p:column></p:column>  
-                <p:column></p:column>  
-            </p:row>
-            <p:row>  
-                <p:column>PA</p:column>  
-                <p:column>Personnel Safety System (XFD)</p:column>  
-                <p:column></p:column>  
-                <p:column></p:column>  
-            </p:row>
-        </p:panelGrid> 
+        <h2 class="heading">Rules</h2>
+        <p:tabView>
+            <p:tab title="General Rules">
+                <p:panel  styleClass="para">
+                    The name of a device is read from left to right and divided into a number of "fields"; 
+                    fields are separated from one another by "delimiters." 
+                    Software engineers know immediately what this means but for those who don't, 
+                    a field is just a piece of a name that can be extracted easily. 
+                    For example, consider the name <b><i>S14A:Ql</i></b>. The first <b><i>S</i></b> is a letter field denoting the accelerator or major subsystem. 
+                    The number  <b><i>14</i></b> denotes the sector number. Because it is a number and not a letter, it is easily recognized ("parsed") 
+                    by the computer as a separate field distinguishable from the letter fields on either side of it (the <b><i>S</i></b> and the <b><i>A</i></b>). 
+                    The <b><i>A</i></b> and <b><i>Q</i></b> are two different letter fields and they need a delimiter between them (the colon) 
+                    to let the computer know that there really are two fields, and not just a single field containing two letters. The colon (<b><i>:</i></b>) 
+                    is the official method for separating fields. A field can have many characters, but at this time the entire device name, 
+                    including all the fields and delimiters, is limited to 28 characters. Therefore, emphasis should be placed on using short, concise device names.
+                </p:panel>
+                <p:panel  styleClass="para">
+                    The above example shows a general rule for naming components at APS/APS-U, namely, as you move from left to right through a name, 
+                    the level of detail becomes increasingly fine. The name S14A:Ql, for example, indicates Storage Ring, Sector 14, Subsector A, Quadrupole, Number 1, 
+                    and is the name of both the magnet and power supply associated with that magnet. More detailed information is added on the right. 
+                    For instance, S14A:Q1CURR might indicate the amount of current being run through the magnet coils.
+                </p:panel>
+            </p:tab>
+            <p:tab title="Storage Ring Magnet and Power Supply">
+                <p:panel  styleClass="para">
+                    The sector of official naming conventions for storage ring magnets begins just upstream of the first <b><i>HN</i></b> steering corrector 
+                    located on Girder 1 and ends at the downstream end of the insertion device. Each sector is divided into two subsectors: A and B. 
+                    Subsector A includes all components within the sector upstream of , and including, sextupole S4.  
+                    Similarly, subsector B contains all downstream components within the sector. 
+                    The bending magnet source and insertion device source in the same sector belong to the same CAT (Collaborative Access Team). 
+                    Sector 1 contains the source points for beamlines BM l and ID 1. This means that the injection septum magnet is located near the end of sector 39.
+                </p:panel>
+                <p:panel  styleClass="para">
+                    The magnets are numbered in sequence according to their distance from the nearest insert ion device. Although this means that all magnets 
+                    in the B subsectors are numbered "backwards," it will make the machine easier to use once it is built because of the mirror symmetry about 
+                    sextupole S4.
+                </p:panel>
+                <p:panel  styleClass="para">
+                    There are five kinds of magnets (not counting insertion devices) in the ring; quadrupoles, skew quadrupoles, sextupoles, steering correctors, and dipoles. 
+                    The steering corrector magnets each have two sets of coils and two power supplies, one each for horizontal and vertical orbit correction. 
+                    This type of magnet is therefore stuck with two names, for example Sl4A:H2 and S14A:V2, for the same corrector. 
+                    For the items in parentheses to be variable -- (n) really is just a number somewhere between 01 and 40. Similarly, (H,V) should be replaced by either H or V, not both. 
+                    Incidentally, numbers less than ten will use a leading zero, e.g. use S07A:Q3, not S7A:Q3.
+                </p:panel>
+            </p:tab>
+            
+            <p:tab title="Girder and Vacuum System">
+                <p:panel  styleClass="para">
+                    Certain pieces of hardware in the storage ring, such as girders, are completely divorced from the control system. 
+                    When referring to girder assemblies for installation purposes, all that is required is the sector number and one additional number, 1 through 6. 
+                    Therefore, the second girder in sector 14 will have the symbol 14-2 spray painted on its side. 
+                    Similarly, the vacuum chamber sections are referred to by sector number (zero one through forty) and section number (one through six), 
+                    again for installation purposes. 
+                    This numbering is simple, useful for installation and maintenance purposes, and consistent with the magnet sector numbering scheme.
+                </p:panel>
+                <p:panel  styleClass="para">
+                    The overall accelerator vacuum system, however, is monitored by the control system, 
+                    and specific sensors should comply with the principles already set forward. 
+                    Because the vacuum system has no mirror symmetry, the letters A and B are not useful and will not be required in the name. 
+                    All storage ring vacuum components monitored or controlled by the APS/APS-U control system shall be of the form <b><i>S(n):XXX</i></b> 
+                    where again (n) is replaced by the sector number. The symbol XXX is a field or fields giving more detail, e.g. representing a gauge, pump, or thermocouple.
+                </p:panel>
+                <p:panel  styleClass="para">
+                    The sector demarcation described earlier is not detailed enough for the vacuum group. 
+                    For vacuum purposes, the sector begins at the upstream flange of SRVC section 1. 
+                    In particular, this means that the two gate valves located immediately upstream and downstream of insertion device n will both be located in sector n.
+                </p:panel>
+            </p:tab>
+
+            <p:tab title="RF System">
+                <p:panel  styleClass="para">
+                    The four storage ring RF systems have the distinction of being located in sectors 35; 36, 37, and 38. 
+                    Rather than referring to them by their sector numbers, it is preferable to describe them as rf systems 1, 2, 3, and 4, 
+                    with system 1 being furthest upstream.  
+                    All RF system subcomponents will be referred to as <b><i>SRF1:XXX</i></b>, <b><i>SRF2:XXX</i></b>, etc., 
+                    where XXX describes the subcomponent in more detail. For example, SRF2:FWD might refer to storage ring system 2 forward power.
+                </p:panel>
+            </p:tab>
+
+            <p:tab title="Photon Beamline Components">
+                <p:panel  styleClass="para">
+                    All photon source points are located in subsector B, so again the A and B contribute no new information. 
+                    In order to easily distinguish between bending magnet and insertion device beamlines and still maintain the nomenclature philosophy, 
+                    all beamline component names shall be of the form S(n)BM:XXX or S(n)ID:XXX, where BM and ID are used in place of A and B, 
+                    and further detail is given by XXX. Recall that S l BM:XXX represents devices located on the first beamline encountered 
+                    as one goes clockwise around the ring starting from the injection point.
+                 </p:panel>
+                <p:panel  styleClass="para">
+                    Because there are vacuum components serving similar functions in both the accelerator vacuum system and the photon beamlines, 
+                    it is important that the XXX portion of the name for these items be consistent between ASD and XFD. 
+                    The ASD Controls Group will serve as the unifying entity, ensuring that nomenclature consistency is maintained 
+                    throughout the facility and that every device has its own unique name.
+                </p:panel>
+            </p:tab>
+
+            <p:tab title="Exceptions, Special Items">
+                <p:panel  styleClass="para">
+                    There will always be items which are impossible to name in a totally consistent way. 
+                    For example, the power supply driving the pulsed injection bumper magnets will be connected in series and span two adjacent sectors.  
+                    These will have to be given special names on a case-by-case basis.
+                </p:panel>
+                <p:panel  styleClass="para">
+                    Another item requiring special attention from the accelerator physics point of view is the naming of the drift spaces between magnets. 
+                    The convent ion is that a drift space will be given the same name as the magnet immediately upstream, followed by the symbol L.
+                </p:panel>
+            </p:tab>
+        </p:tabView>
         
-<!--        <h2 class="heading">Examples</h2>
+        <h2 class="heading">Examples</h2>
+        <p:tabView>
+            <p:tab title="System">
+                <p:panelGrid style="text-align: left">  
+                    <f:facet name="header">  
+                        <p:row>  
+                            <p:column>Naming Part</p:column>  
+                            <p:column>Description</p:column>  
+                            <p:column>Requirements</p:column>  
+                            <p:column>Assigned By</p:column>  
+                        </p:row>  
+                    </f:facet>  
+                    <p:row>  
+                        <p:column>S</p:column>  
+                        <p:column>Storage Ring</p:column>  
+                        <p:column></p:column>  
+                        <p:column></p:column>  
+                    </p:row> 
+                    <p:row>  
+                        <p:column>B</p:column>  
+                        <p:column>Booster Ring</p:column>  
+                        <p:column></p:column>  
+                        <p:column></p:column>  
+                    </p:row> 
+                    <p:row>  
+                        <p:column>SY</p:column>  
+                        <p:column>Storage RF</p:column>  
+                        <p:column>Not to be used for new PVs</p:column>  
+                        <p:column></p:column>  
+                    </p:row> 
+                    <p:row>  
+                        <p:column>P</p:column>  
+                        <p:column>PAR</p:column>  
+                        <p:column></p:column>  
+                        <p:column></p:column>  
+                    </p:row> 
+                    <p:row>  
+                        <p:column>L</p:column>  
+                        <p:column>Linac</p:column>  
+                        <p:column></p:column>  
+                        <p:column></p:column>  
+                    </p:row>
+                    <p:row>  
+                        <p:column>Mt</p:column>  
+                        <p:column>Master Timing</p:column>  
+                        <p:column></p:column>  
+                        <p:column></p:column>  
+                    </p:row>
+                    <p:row>  
+                        <p:column>It</p:column>  
+                        <p:column>Injector Timing</p:column>  
+                        <p:column></p:column>  
+                        <p:column></p:column>  
+                    </p:row>
+                    <p:row>  
+                        <p:column>SRF</p:column>  
+                        <p:column>Storage Ring RF</p:column>  
+                        <p:column></p:column>  
+                        <p:column></p:column>  
+                    </p:row>
+                    <p:row>  
+                        <p:column>SRFB</p:column>  
+                        <p:column>Storage Ring Feedback System</p:column>  
+                        <p:column></p:column>  
+                        <p:column></p:column>  
+                    </p:row>
+                    <p:row>  
+                        <p:column>BTS</p:column>  
+                        <p:column>Booster to Storage Ring</p:column>  
+                        <p:column></p:column>  
+                        <p:column></p:column>  
+                    </p:row>
+                    <p:row>  
+                        <p:column>H2O</p:column>  
+                        <p:column>Water System</p:column>  
+                        <p:column></p:column>  
+                        <p:column></p:column>  
+                    </p:row>
+                    <p:row>  
+                        <p:column>IOC</p:column>  
+                        <p:column>IOC Status</p:column>  
+                        <p:column></p:column>  
+                        <p:column></p:column>  
+                    </p:row>
+                    <p:row>  
+                        <p:column>ACIS</p:column>  
+                        <p:column>Access Control Interlock</p:column>  
+                        <p:column></p:column>  
+                        <p:column></p:column>  
+                    </p:row>
+                    <p:row>  
+                        <p:column>FE</p:column>  
+                        <p:column>Front End (XFD)</p:column>  
+                        <p:column></p:column>  
+                        <p:column></p:column>  
+                    </p:row>
+                    <p:row>  
+                        <p:column>ID</p:column>  
+                        <p:column>Insertion Device (XFD)</p:column>  
+                        <p:column></p:column>  
+                        <p:column></p:column>  
+                    </p:row>
+                    <p:row>  
+                        <p:column>EPS</p:column>  
+                        <p:column>Equipment protection System (XFD)</p:column>  
+                        <p:column></p:column>  
+                        <p:column></p:column>  
+                    </p:row>
+                    <p:row>  
+                        <p:column>PA</p:column>  
+                        <p:column>Personnel Safety System (XFD)</p:column>  
+                        <p:column></p:column>  
+                        <p:column></p:column>  
+                    </p:row>
+                </p:panelGrid> 
+            </p:tab>
+            <p:tab title="Magnet Nomenclature">
+                <p:panelGrid style="text-align: left; align: center;">  
+                    <f:facet name="header">  
+                        <p:row>  
+                            <p:column>Symbol</p:column>  
+                            <p:column>Description</p:column>  
+                        </p:row>  
+                    </f:facet> 
+                    <p:row> 
+                        <p:column>Q</p:column>  
+                        <p:column>Quadrupole</p:column>  
+                    </p:row> 
+                    <p:row>  
+                        <p:column>QS</p:column>  
+                        <p:column>Skew Quadrupole</p:column>
+                    </p:row> 
+                    <p:row>  
+                        <p:column>S</p:column>  
+                        <p:column>Sextupole</p:column>  
+                    </p:row> 
+                    <p:row>  
+                        <p:column>H</p:column>  
+                        <p:column>Horizontal Steering Corrector</p:column>  
+                    </p:row> 
+                    <p:row> 
+                        <p:column>V</p:column>  
+                        <p:column>Vertical Steering Corrector</p:column>  
+                    </p:row> 
+                    <p:row>  
+                        <p:column>M</p:column>  
+                        <p:column>Dipole</p:column>  
+                    </p:row> 
+                    <p:row>  
+                        <p:column>P</p:column>  
+                        <p:column>Position Monitor</p:column>  
+                    </p:row> 
+                    <p:row>  
+                        <p:column>ID</p:column>  
+                        <p:column>Insertion Device Source</p:column>  
+                    </p:row> 
+                    <p:row> 
+                        <p:column>BM</p:column>  
+                        <p:column>Bending Magnet Source</p:column>  
+                    </p:row>
+                </p:panelGrid>
+                <p:panel style="border: none; text-align: center; " >
+                    <p:graphicImage value="resources/images/apsu5-format.png"  style="width: 40%;"/>    
+                </p:panel>
+            </p:tab>
+            <p:tab title="Girder Nomenclature">
+                <h4 class="heading">Table 1: Girder SnA:DLM</h4>
+                <p:panelGrid style="text-align: left; align: center;">  
+                    <f:facet name="header">  
+                        <p:row>  
+                            <p:column>Magnets</p:column>  
+                            <p:column>Magnet Instrumentation</p:column> 
+                            <p:column>Vacuum Chambers</p:column>  
+                            <p:column>Discrete Absorbers</p:column> 
+                            <p:column>Vacuum Instrumentation</p:column>  
+                            <p:column>Diagnostics</p:column> 
+                            <p:column>Copper Water Instrumentation</p:column>  
+                            <p:column>Aluminum Water Instrumentation</p:column>  
+                        </p:row>  
+                    </f:facet> 
+                    <p:row> 
+                        <p:column>A:Q1</p:column>
+                        <p:column>TC and Klixon</p:column>
+                        <p:column>A:VC1</p:column>
+                        <p:column>A:CA1</p:column>
+                        <p:column>A:GV1</p:column>
+                        <p:column>A:P0 (?)</p:column>
+                        <p:column>N/A</p:column>
+                        <p:column>N/A</p:column>
+                    </p:row> 
+                    <p:row> 
+                        <p:column>A:Q2</p:column>
+                        <p:column>TC and Klixon</p:column>
+                        <p:column>A:VC2</p:column>
+                        <p:column>A:EA1</p:column>
+                        <p:column>Ion pump</p:column>
+                        <p:column>A:P1</p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                    </p:row> 
+                    <p:row> 
+                        <p:column>A:M1</p:column>
+                        <p:column>TC and Klixon</p:column>
+                        <p:column>A:VC3</p:column>
+                        <p:column></p:column>
+                        <p:column>Gage tree</p:column>
+                        <p:column>A:P2</p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                    </p:row> 
+                    <p:row> 
+                        <p:column>A:Q3</p:column>
+                        <p:column>TC and Klixon</p:column>
+                        <p:column>A:VC4</p:column>
+                        <p:column></p:column>
+                        <p:column>Ion pump</p:column>
+                        <p:column>A:P3</p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                    </p:row> 
+                    <p:row> 
+                        <p:column>A:S1</p:column>
+                        <p:column>TC and Klixon</p:column>
+                        <p:column>A:VC5</p:column>
+                        <p:column></p:column>
+                        <p:column>Gage tree</p:column>
+                        <p:column>A:P4</p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                    </p:row> 
+                    <p:row> 
+                        <p:column>A:Q4</p:column>
+                        <p:column>TC and Klixon</p:column>
+                        <p:column>A:VC6</p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                    </p:row> 
+                    <p:row> 
+                        <p:column>A:S2</p:column>
+                        <p:column>TC and Klixon</p:column>
+                        <p:column>A:VC7</p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                    </p:row> 
+                    <p:row> 
+                        <p:column>A:Q5</p:column>
+                        <p:column>TC and Klixon</p:column>
+                        <p:column>A:VC8</p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                    </p:row> 
+                    <p:row> 
+                        <p:column>A:S3</p:column>
+                        <p:column>TC and Klixon</p:column>
+                        <p:column>A:VC9</p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                    </p:row> 
+                    <p:row> 
+                        <p:column>A:Q6</p:column>
+                        <p:column>TC and Klixon</p:column>
+                        <p:column>A:VC10</p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                    </p:row> 
+                    <p:row> 
+                        <p:column></p:column>
+                        <p:column></p:column>
+                        <p:column>Photon Extraction</p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                    </p:row> 
+                </p:panelGrid>
+                <h4 class="heading">Table 2: Girder SnA:M2 Dipole</h4>
+                <p:panelGrid style="text-align: left; align: center;">  
+                    <f:facet name="header">  
+                        <p:row>  
+                            <p:column>Magnets</p:column>  
+                            <p:column>Magnet Instrumentation</p:column> 
+                            <p:column>Vacuum Chambers</p:column>  
+                            <p:column>Discrete Absorbers</p:column> 
+                            <p:column>Vacuum Instrumentation</p:column>  
+                            <p:column>Diagnostics</p:column> 
+                            <p:column>Copper Water Instrumentation</p:column>  
+                            <p:column>Aluminum Water Instrumentation</p:column>  
+                        </p:row>  
+                    </f:facet> 
+                    <p:row> 
+                        <p:column>A:M2</p:column>
+                        <p:column>TC and Klixon</p:column>
+                        <p:column>A:VC11</p:column>
+                        <p:column>A:EA2</p:column>
+                        <p:column>N/A</p:column>
+                        <p:column>N/A</p:column>
+                        <p:column>N/A</p:column>
+                        <p:column>N/A</p:column>
+                    </p:row> 
+                </p:panelGrid>
+                <h4 class="heading">Table 3: Girder Sn:FODO</h4>
+                <p:panelGrid style="text-align: left; align: center;">  
+                    <f:facet name="header">  
+                        <p:row>  
+                            <p:column>Magnets</p:column>  
+                            <p:column>Magnet Instrumentation</p:column> 
+                            <p:column>Vacuum Chambers</p:column>  
+                            <p:column>Discrete Absorbers</p:column> 
+                            <p:column>Vacuum Instrumentation</p:column>  
+                            <p:column>Diagnostics</p:column> 
+                            <p:column>Copper Water Instrumentation</p:column>  
+                            <p:column>Aluminum Water Instrumentation</p:column>  
+                        </p:row>  
+                    </f:facet> 
+                    <p:row> 
+                        <p:column>A:Q7</p:column>
+                        <p:column>TC and Klixon</p:column>
+                        <p:column>A:VC12</p:column>
+                        <p:column></p:column>
+                        <p:column>A:GV2</p:column>
+                        <p:column>A:P5</p:column>
+                        <p:column>Flow Switch</p:column>
+                        <p:column>Flow Switch</p:column>
+                    </p:row> 
+                    <p:row> 
+                        <p:column>A:M3</p:column>
+                        <p:column>TC and Klixon</p:column>
+                        <p:column>A:VC13</p:column>
+                        <p:column></p:column>
+                        <p:column>A:GV2</p:column>
+                        <p:column>A:P6</p:column>
+                        <p:column>Flow Switch</p:column>
+                        <p:column></p:column>
+                    </p:row> 
+                    <p:row> 
+                        <p:column>A:Q8</p:column>
+                        <p:column>TC and Klixon</p:column>
+                        <p:column>A:VC14</p:column>
+                        <p:column></p:column>
+                        <p:column>Ion pump</p:column>
+                        <p:column>B:P6</p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                    </p:row> 
+                    <p:row> 
+                        <p:column>A:M4</p:column>
+                        <p:column>TC and Klixon</p:column>
+                        <p:column>A:VC14</p:column>
+                        <p:column></p:column>
+                        <p:column>Gage tree</p:column>
+                        <p:column>B:P5</p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                    </p:row> 
+                    <p:row> 
+                        <p:column>B:Q8</p:column>
+                        <p:column>TC and Klixon</p:column>
+                        <p:column>B:VC11</p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                    </p:row> 
+                    <p:row> 
+                        <p:column>M:M3</p:column>
+                        <p:column>TC and Klixon</p:column>
+                        <p:column>B:VC10</p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                    </p:row> 
+                    <p:row> 
+                        <p:column rowspan="3">B:Q7</p:column>
+                        <p:column rowspan="3">TC and Klixon</p:column>
+                        <p:column>A:VC17</p:column>
+                        <p:column rowspan="3"></p:column>
+                        <p:column rowspan="3"></p:column>
+                        <p:column rowspan="3"></p:column>
+                        <p:column rowspan="3"></p:column>
+                        <p:column rowspan="3"></p:column>
+                    </p:row> 
+                    <p:row> 
+                        <p:column>A:VC18</p:column>
+                    </p:row> 
+                    <p:row> 
+                        <p:column>A:VC19</p:column>
+                    </p:row> 
+                </p:panelGrid>
+                <h4 class="heading">Table 4: Girder SnB:M2 Dipole</h4>
+                <p:panelGrid style="text-align: left; align: center;">  
+                    <f:facet name="header">  
+                        <p:row>  
+                            <p:column>Magnets</p:column>  
+                            <p:column>Magnet Instrumentation</p:column> 
+                            <p:column>Vacuum Chambers</p:column>  
+                            <p:column>Discrete Absorbers</p:column> 
+                            <p:column>Vacuum Instrumentation</p:column>  
+                            <p:column>Diagnostics</p:column> 
+                            <p:column>Copper Water Instrumentation</p:column>  
+                            <p:column>Aluminum Water Instrumentation</p:column>  
+                        </p:row>  
+                    </f:facet> 
+                    <p:row> 
+                        <p:column rowspan="2">B:M2</p:column>
+                        <p:column rowspan="2">TC and Klixon</p:column>
+                        <p:column rowspan="2">B:VC9</p:column>
+                        <p:column>B:CA1</p:column>
+                        <p:column rowspan="2">N/A</p:column>
+                        <p:column rowspan="2">N/A</p:column>
+                        <p:column rowspan="2">N/A</p:column>
+                        <p:column rowspan="2">N/A</p:column>
+                    </p:row> 
+                    <p:row> 
+                        <p:column>B:EA2</p:column>
+                    </p:row> 
+                </p:panelGrid>
+                <h4 class="heading">Table 5: Girder SnB:DLM</h4>
+                <p:panelGrid style="text-align: left; align: center;">  
+                    <f:facet name="header">  
+                        <p:row>  
+                            <p:column>Magnets</p:column>  
+                            <p:column>Magnet Instrumentation</p:column> 
+                            <p:column>Vacuum Chambers</p:column>  
+                            <p:column>Discrete Absorbers</p:column> 
+                            <p:column>Vacuum Instrumentation</p:column>  
+                            <p:column>Diagnostics</p:column> 
+                            <p:column>Copper Water Instrumentation</p:column>  
+                            <p:column>Aluminum Water Instrumentation</p:column>  
+                        </p:row>  
+                    </f:facet> 
+                    <p:row> 
+                        <p:column>B:Q1</p:column>
+                        <p:column>TC and Klixon</p:column>
+                        <p:column>B:VC1</p:column>
+                        <p:column>B:EA1</p:column>
+                        <p:column>B:GV1</p:column>
+                        <p:column>B:P0 (?)</p:column>
+                        <p:column>Flow Switch</p:column>
+                        <p:column>Flow Switch</p:column>
+                    </p:row> 
+                    <p:row> 
+                        <p:column>B:Q2</p:column>
+                        <p:column>TC and Klixon</p:column>
+                        <p:column>B:VC2</p:column>
+                        <p:column></p:column>
+                        <p:column>Ion pump</p:column>
+                        <p:column>B:P1</p:column>
+                        <p:column></p:column>
+                        <p:column>Flow Switch</p:column>
+                    </p:row> 
+                    <p:row> 
+                        <p:column>B:M1</p:column>
+                        <p:column>TC and Klixon</p:column>
+                        <p:column>B:VC3</p:column>
+                        <p:column></p:column>
+                        <p:column>Gage tree</p:column>
+                        <p:column>B:P2</p:column>
+                        <p:column></p:column>
+                        <p:column>Flow Switch</p:column>
+                    </p:row> 
+                    <p:row> 
+                        <p:column>B:Q3</p:column>
+                        <p:column>TC and Klixon</p:column>
+                        <p:column>B:VC4</p:column>
+                        <p:column></p:column>
+                        <p:column>Ion pump</p:column>
+                        <p:column>B:P3</p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                    </p:row> 
+                    <p:row> 
+                        <p:column>B:S1</p:column>
+                        <p:column>TC and Klixon</p:column>
+                        <p:column>B:VC5</p:column>
+                        <p:column></p:column>
+                        <p:column>Gage tree</p:column>
+                        <p:column>B:P4</p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                    </p:row> 
+                    <p:row> 
+                        <p:column>B:Q4</p:column>
+                        <p:column>TC and Klixon</p:column>
+                        <p:column>B:VC6</p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                    </p:row> 
+                    <p:row> 
+                        <p:column>B:S2</p:column>
+                        <p:column>TC and Klixon</p:column>
+                        <p:column>B:VC7</p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                    </p:row> 
+                    <p:row> 
+                        <p:column>B:Q5</p:column>
+                        <p:column>TC and Klixon</p:column>
+                        <p:column>B:VC8</p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                    </p:row> 
+                    <p:row> 
+                        <p:column>B:S3</p:column>
+                        <p:column>TC and Klixon</p:column>
+                        <p:column>A:VC12</p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                    </p:row> 
+                    <p:row> 
+                        <p:column>B:Q6</p:column>
+                        <p:column>TC and Klixon</p:column>
+                        <p:column>A:VC10</p:column>
+                        <p:column>Photon Extraction</p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                        <p:column></p:column>
+                    </p:row> 
+                </p:panelGrid>
+            </p:tab>
+        </p:tabView>
+        
+        <h2 class="heading">Examples</h2>
      
-        <p:panelGrid style="text-align: left">  
+<!--        <p:panelGrid style="text-align: left">  
             <f:facet name="header">                  
                 <p:row>  
                     <p:column>Description</p:column>  
