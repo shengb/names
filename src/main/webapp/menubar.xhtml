@@ -52,17 +52,17 @@
                     <p:menuitem value=" RESTful API V1" title="API Manual V1" 
                             icon="ui-icon-script" 
                             url="/docs/api-v1/" />
-                    <p:menuitem value=" RESTful API V0" title="API Manual V0" 
+<!--                    <p:menuitem value=" RESTful API V0" title="API Manual V0" 
                             icon="ui-icon-script" 
-                            url="/docs/api-v0/" />                 
+                            url="/docs/api-v0/" />                 -->
                 </p:submenu>
                 <p:menuitem value=" Naming Document" title="Latest Naming System Document"
                             icon="ui-icon-document" target="_blank"
                             url="#{publicationManager.latestRelease eq null? '/' : publicationManager.latestRelease.docUrl}" disabled="#{publicationManager.latestRelease eq null}"/>
-                <p:menuitem value=" Report Problems" title="Report Problems/Suggestions" 
+<!--                <p:menuitem value=" Report Problems" title="Report Problems/Suggestions" 
                             icon="ui-icon-alert" target="_blank"
                             url="https://controls.frib.msu.edu/controlshelp/" 
-                            rendered="false"/>
+                            rendered="false"/>-->
                 <p:menuitem value=" About" id="aboutMenu" icon="ui-icon-info"  immediate="true"
                             title="About Proteus: Naming" />                          
             </p:submenu>
