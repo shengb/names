@@ -45,7 +45,7 @@
                         <!--ToDo: Move it to the menubar, if possible-->
                         <p:menuButton model="#{menuManager.model}"  value="#{msgs.nameElementCategory}"/>                      
                     </f:facet>
-                    <h:outputText value="#{stdname.nameCategoryId.id}" /> 
+                    <h:outputText value="#{stdname.nameCategoryId.name}" />
 
                 </p:column>
                 <p:column id="nameCode" headerText="Code" sortBy="#{stdname.nameCode}"
@@ -58,6 +58,12 @@
                           filterBy="#{stdname.nameDescription}"
                           filterMatchMode="contains" >                  
                     <h:outputText value="#{stdname.nameDescription}" />                              
+                </p:column>
+
+                <p:column id="nameComment" headerText="Comments"
+                          filterBy="#{stdname.requestorComment}"
+                          filterMatchMode="contains" >
+                    <h:outputText value="#{stdname.requestorComment}" />
                 </p:column>
 
             </p:dataTable>
