@@ -50,7 +50,7 @@ public class NameCategory implements Serializable {
     @Id
     @Basic(optional = false)
     @NotNull
-    @Size(min = 1, max = 16)
+    @Size(min = 1, max = 32)
     @Column(name = "id")
     private String id;
     @Basic(optional = false)
